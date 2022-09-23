@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Set-Cookie: <cookie-name>=<cookie-value> -->
+    <title>JavaScript</title>
+</head>
+<body style="height: 200px;background: linear-gradient(45deg, #EECFBA, #C5DDE8);">
+    <div class="shad"><h3 id="time">Ваше имя: <div id="name"></div> </h3>
+    <div class="login">
+        <div id="changeName">
+            <button class="changeName" onclick="changeName()">Ввести новое имя</button>
+        </div>
+    </div>
+    </div>
+    <div class="shadowbox" style="text-align: center;">
+    <p ><img class="imgsize"src="img/pngegg.png" style="height: 155px;
+        width: 155px;"></p>    
+    <h1 >Общие сведения о языке JS</h1>
+    <h2 >JavaScript  используется для того, чтобы делать страницы интерактивными,<br> то есть дать пользователю возможность взаимодействовать с элементами.<br> Когда страницы могут реагировать на какие-то действия, это делает их интереснее.</h2>
+
+    <div><h3>Задание 0:</h3>
+        <p><input type="button" id="btn" value="Задание 0"></p>
+    </div>
+    <div><h3>Задание 1:</h3>
+        <p><input type="button" id="btn1" value="Задание 1"></p>
+    </div>
+    <div><h3>Задание 2:</h3>
+        <p><input type="button" id="btn2" value="Задание 2"></p>
+    </div>
+    <div><h3>Задание 3:</h3>
+        <p><input type="button" id="btn3" value="Задание 3"></p>
+    </div>
+    <div><h3>Задание 4:</h3>
+                        <div class="timer">
+                            <div class="time-block">
+                                <div class="time minute">00:</div>
+                                    <div class="time second">00</div>
+                            </div>
+                            <div class="isTime"></div>
+                                <div class="timeButtons">
+                                    <button class="startTime" onclick="FiveQ()">Задать время</button>
+                                        <button class="start">Запустить</button>
+                                            <button class="stop">Обнулить</button>
+                                                <button class="pause">Пауза</button>
+                                                    <button class="hlong">Сколько времени прошло</button>
+                                </div>
+            </div>
+    </div>
+    <div><h3>Задание 5:</h3>
+        <form name="quiz" action="javascript:check();" class="quizform">  
+        <div class="quizsection">
+ 
+ 
+            <h2>Вопрос #1</h2>
+             <h3>В каком году был создан JS?</h3>
+            <div class="answer">
+                <input name="q1" value="value2" id="value1" type="radio" checked="checked" /> 1995
+            </div>
+         
+            <div class="answer">
+                <input name="q1" value="value1" id="value2" type="radio" /> 2000
+            </div>
+         
+            <div class="answer">
+                <input name="q1" value="value1" id="value3" type="radio" /> 1985
+            </div>       
+        </div>
+         
+        <div class="quizsection">
+         
+            <h2>Вопрос #2</h2>
+            <h3>Как звали создателя языка JS?</h3>
+            <div class="answer">
+                <input name="q2" value="value1" id="value1" type="radio" checked="checked" /> Бьёрн Страуструп
+            </div>
+         
+            <div class="answer">
+                <input name="q2" value="value2" id="value2" type="radio" /> Брендан Эйх
+            </div>
+         
+            <div class="answer">
+                <input name="q2" value="value1" id="value3" type="radio" /> Джеймс Гослинг
+            </div>        
+        </div>
+         
+        <div class="quizsection">
+         
+            <h2>Вопрос #3</h2>
+            <h3>Какая, на данный момент, последняя версия JS доступна для установки?</h3>
+            <div class="answer">
+                <input name="q3" value="value1" id="value1" type="radio" checked="checked" /> 1.5.3
+            </div>
+         
+            <div class="answer">
+                <input name="q3" value="value1" id="value2" type="radio" /> 2.0
+            </div>
+         
+            <div class="answer">
+                <input name="q3" value="value2" id="value3" type="radio" /> 1.8.5
+            </div>        
+      </div>
+      <div class="quizsection">
+         
+        <h2>Вопрос #4</h2>
+        <h3>Когда был создан интернет?</h3>
+        <div class="answer">
+            <input name="q4" value="value1" id="value1" type="radio" checked="checked" /> 1980
+        </div>
+     
+        <div class="answer">
+            <input name="q4" value="value1" id="value2" type="radio" /> 1960
+        </div>
+     
+        <div class="answer">
+            <input name="q4" value="value2" id="value3" type="radio" /> 1969 
+        </div>        
+  </div>
+  <div class="quizsection">
+         
+    <h2>Вопрос #5</h2>
+    <h3>когда был изобретен компьютер?</h3>
+    <div class="answer">
+        <input name="q5" value="value2" id="value1" type="radio" checked="checked" /> 1949
+    </div>
+ 
+    <div class="answer">
+        <input name="q5" value="value1" id="value2" type="radio" /> 1945
+    </div>
+ 
+    <div class="answer">
+        <input name="q5" value="value1" id="value3" type="radio" /> 1960
+    </div>        
+</div>
+<div class="quizsection">
+         
+    <h2>Вопрос #6</h2>
+    <h3>какая функция вызывает сообщение поверх сайта?</h3>
+    <div class="answer">
+        <input name="q6" value="value1" id="value1" type="radio" checked="checked" /> alirt
+    </div>
+ 
+    <div class="answer">
+        <input name="q6" value="value2" id="value2" type="radio" /> alert
+    </div>
+ 
+    <div class="answer">
+        <input name="q6" value="value2" id="value3" type="radio" /> window.location
+    </div>        
+</div>
+<div class="quizsection">
+         
+    <h2>Вопрос #7</h2>
+    <h3>Кто владеет js?</h3>
+    <div class="answer">
+        <input name="q7" value="value1" id="value1" type="radio" checked="checked" /> Microsoft
+    </div>
+ 
+    <div class="answer">
+        <input name="q7" value="value1" id="value2" type="radio" /> Puck
+    </div>
+ 
+    <div class="answer">
+        <input name="q7" value="value2" id="value3" type="radio" /> Oracle
+    </div>        
+</div>
+<div class="quizsection">
+         
+    <h2>Вопрос #8</h2>
+    <h3>Каким языком разметки чаще всего пользуются в связке с js?</h3>
+    <div class="answer">
+        <input name="q8" value="value1" id="value1" type="radio" checked="checked" /> GML
+    </div>
+ 
+    <div class="answer">
+        <input name="q8" value="value1" id="value2" type="radio" /> Numi
+    </div>
+ 
+    <div class="answer">
+        <input name="q8" value="value2" id="value3" type="radio" /> HTML
+    </div>        
+</div>
+<div class="quizsection">
+         
+    <h2>Вопрос #9</h2>
+    <h3>Какое первое название было у JS?</h3>
+    <div class="answer">
+        <input name="q9" value="value1" id="value1" type="radio" checked="checked" /> Java
+    </div>
+ 
+    <div class="answer">
+        <input name="q9" value="value2" id="value2" type="radio" /> LiveScript
+    </div>
+ 
+    <div class="answer">
+        <input name="q9" value="value1" id="value3" type="radio" /> Swift
+    </div>        
+</div>
+<div class="quizsection">
+         
+    <h2>Вопрос #10</h2>
+    <h3>Какой самый популярный язык программирования?</h3>
+    <div class="answer">
+        <input name="q10" value="value1" id="value1" type="radio" checked="checked" /> C++
+    </div>
+ 
+    <div class="answer">
+        <input name="q10" value="value1" id="value2" type="radio" /> JS
+    </div>
+ 
+    <div class="answer">
+        <input name="q10" value="value2" id="value3" type="radio" /> Pyhton
+    </div>        
+</div>
+            <input value="Проверить" type="submit" /> <input value="Сбросить" type="reset" />  
+             
+        </div>
+    </form>  
+    <div class="seventh2">
+    <p><span class="quest"><h3>Задание 6:</h3></span> - При нажатии на кнопку появляется заставка на весь экран с красивым фоном,текущей датой и именем пользователя. 
+        При нажатии на любое место экран исчазает и сайт опять появляется </p>
+            <div class="background-item">
+                <div class="background-image">
+                    <img id='bg' src="img/gradient.jpg" alt="">
+                </div>
+                <button class="toggleFullscreenImage">Включить заставку</button>
+            </div>
+    </div>
+    </div>
+    
+    </div> 
+
+    </div>
+
+<form enctype="multipart/form-data" method="post">
+</form>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

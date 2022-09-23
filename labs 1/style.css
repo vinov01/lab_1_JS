@@ -1,0 +1,29 @@
+
+.shadowbox{
+    padding: 0px 200px;
+}
+.shad{
+    float:right
+}
+.seventh2{
+    margin-left:5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.background-item{
+    display: flex;
+    justify-content: center;
+}
+.background-image{
+    display: none;
+}
+.background-item .toggleFullscreenImage{
+    font-size:32px;
+    cursor: pointer;
+}
+.login{
+    display: inline-block;
+    float:right;
+    text-align: end;
+}
